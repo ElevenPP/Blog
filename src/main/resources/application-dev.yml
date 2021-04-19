@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root
+  jpa:
+    hibernate:
+#      ddl-auto: update每次连接数据库，检查实体对象和数据库表是否一样，不一样则根据实体对象来同步更新数据库中表结构 ddl-auto: create是删除库中数据重新生成，慎用
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    root: info
+    com.blog: debug
+  file:
+    path: log/blog-dev.log
+
