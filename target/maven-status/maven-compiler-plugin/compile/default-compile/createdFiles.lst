@@ -1,4 +1,6 @@
 com\pp\handler\ControlExceptionHandler.class
-com\pp\BlogApplication.class
 com\pp\blog\IndexController.class
+com\pp\BlogApplication.class
+com\pp\aspect\LogAscept$RequestLog.class
+com\pp\aspect\LogAscept.class
 com\pp\NotFoundException.class
