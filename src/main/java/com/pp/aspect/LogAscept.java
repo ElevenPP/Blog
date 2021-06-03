@@ -18,7 +18,7 @@ public class LogAscept {
     //拿到日志记录器
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    @Pointcut("execution(* com.pp.blog.*.*(..))")//@Pointcut定义log（）方法为一个切面，execution(* com.pp.blog.*.*(..))表示com.pp.blog文件夹下所有类的所有方法都拦截
+    @Pointcut("execution(* com.pp.web.*.*(..))")//@Pointcut定义log（）方法为一个切面，execution(* com.pp.blog.*.*(..))表示com.pp.blog文件夹下所有类的所有方法都拦截
     public void log() {
 
     }
